@@ -1,0 +1,76 @@
+body {
+    margin: 10%;
+    background-color: #1F2937;
+}
+
+#title1 {
+    color: white;
+    margin: 0px;
+}
+
+#title2 {
+    color: #34D399;
+    margin: 0px;
+}
+
+h3 {
+    color: #D5D4D8;
+}
+
+#passwords-div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.passwords {
+    color: #55F991;
+    background-color: #273549;
+    width: 211px;
+    height: 39px;
+    padding: 0 12px;
+    border: 1px solid #273549;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button {
+    background-color: #10B981;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #10B981;
+    padding: 10px 16px;
+    font-size: 16px;
+    margin: 30px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    text-shadow: 0px 0px 2px white;
+    border: 2px solid white;
+}
+
+
+.toast {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    background-color: #10B981;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
